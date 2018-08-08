@@ -35,7 +35,7 @@ public class UserController {
     @Autowired
     private IUserRepository userRepository;
     
-    @PostMapping(path = "")
+    @PostMapping(path = "register")
     public User create(@RequestBody User user){
         return this.accountService.create(user);
     }
